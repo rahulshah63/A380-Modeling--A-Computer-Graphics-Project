@@ -142,7 +142,7 @@ class Window:
         self._update_projection()
 
     def _on_key_input(self, _window, key, _scancode, action, _mode) -> None:
-        left_right = {glfw.KEY_LEFT: 0.03, glfw.KEY_RIGHT: -0.03}
+        left_right = {glfw.KEY_LEFT: -0.03, glfw.KEY_RIGHT: 0.03}
         if key in left_right and action != glfw.RELEASE:
             self.spot_light_angle_offset_x += left_right[key]
             return
@@ -172,10 +172,10 @@ class Window:
         elif key is glfw.KEY_E and action != glfw.RELEASE:
             self.yTrans += 0.05
             return
-        elif key is glfw.KEY_A and action != glfw.RELEASE:
+        elif key is glfw.KEY_D and action != glfw.RELEASE:
             self.zTrans -= 0.05
             return
-        elif key is glfw.KEY_D and action != glfw.RELEASE:
+        elif key is glfw.KEY_A and action != glfw.RELEASE:
             self.zTrans += 0.05
             return
             

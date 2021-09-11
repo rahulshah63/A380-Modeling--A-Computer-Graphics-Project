@@ -29,6 +29,7 @@ Used as a cockpit headlight.
 
 ![Moving Camera mode](/Screenshots/moving.png "Moving Camera")
 
+
 ---
 
 ### System Requirements
@@ -42,7 +43,9 @@ Used as a cockpit headlight.
 
 ### Building Instructions
 
-Run main.py after pip installing the above libraries.
+#### Run main.py after pip installing the above libraries.
+#### Use WASDEQ keys to move the plane in front, left, back, right, up and down.
+#### Use the UpDown and LeftRight  to rotate the cockpit look directin.
 
 ---
 
